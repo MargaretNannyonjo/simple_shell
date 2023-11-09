@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "shell.h"
 
 /**
  * main - function main
@@ -8,5 +8,6 @@
 
 int main(void)
 {
+	_printf("Hello world\n");
 	return (0);
 }

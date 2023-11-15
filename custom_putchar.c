@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
-* _putchar - character to stdout
+* custom_putchar - character to stdout
 * @charact: printing
 * Return: integer
 */

@@ -1,6 +1,6 @@
 #include "shell.h"
 /**
-* _printf - stdout char
+* custom_printf - stdout char
 * @output: printed string
 * Return: always an integer
 */

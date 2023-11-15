@@ -9,8 +9,7 @@ void custom_executor(const char *exec_cmd);
 void custom_executor(const char *exec_cmd)
 {
 	pid_t fork_value;
-	char *delimiter = "\n";
-	char *token;
+	char *delimiter = "\n;
 	char *token_array[200];
 	int count = 0;
 	char *env[] = {NULL};
@@ -24,7 +23,7 @@ void custom_executor(const char *exec_cmd)
 	}
 	else if (fork_value == 0)
 	{
-		token = strtok((char *)exec_cmd, delimiter);
+		char *token = strtok((char *)exec_cmd, delimiter);
 
 		while (token != NULL)
 		{

@@ -6,16 +6,17 @@
  */
 
 void custom_executor(const char *exec_cmd);
+
 void custom_executor(const char *exec_cmd)
 {
 	pid_t fork_value;
-	char *delimiter = "\n;
+	char *delimiter = " \t\n";
 	char *token_array[200];
 	int count = 0;
 	char *env[] = {NULL};
 
-	fork_value = fork();
 
+	fork_value = fork();
 	if (fork_value == -1)
 	{
 		perror("fork Error");

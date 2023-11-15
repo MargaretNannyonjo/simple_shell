@@ -13,7 +13,7 @@ int main(void)
 		char *line = NULL;
 		size_t n = 0;
 
-		custom_printf("Enter\n");
+		custom_prompt();
 		custom_getline(&line, &n);
 	}
 	return (0);
